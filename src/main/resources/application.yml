@@ -1,0 +1,12 @@
+spring:
+    datasource:
+        data-source: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.0.100/dispaly?useSSL=true&useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: root
+    jpa:
+      hibernate:
+          ddl-auto: update
+      show-sql: true
+server:
+  port: 8001

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <!-- start: Meta -->
+    <meta charset="utf-8"/>
+    <title>88项目展示</title>
+    <meta name="description" content="88Project"/>
+    <meta name="author" content="Łukasz Holeczek"/>
+    <meta name="keyword" content="SimpliQ, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina"/>
+    <!-- end: Meta -->
+
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- end: Mobile Specific -->
+
+    <!-- start: CSS -->
+    <link th:href="@{../static/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{../static/css/bootstrap-responsive.min.css}" rel="stylesheet"/>
+    <link th:href="@{../static/css/style.min.css}" rel="stylesheet"/>
+    <link th:href="@{../static/css/style-responsive.min.css}" rel="stylesheet"/>
+    <link th:href="@{../static/css/retina.css}" rel="stylesheet"/>
+    <!-- end: CSS -->
+
+
+    <!-- start: Favicon and Touch Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          th:href="@{../static/ico/apple-touch-icon-144-precomposed.png}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          th:href="@{../static/ico/apple-touch-icon-114-precomposed.png}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          th:href="@{../static/ico/apple-touch-icon-72-precomposed.png}"/>
+    <link rel="apple-touch-icon-precomposed" th:href="@{../static/ico/apple-touch-icon-57-precomposed.png}"/>
+    <link rel="shortcut icon" th:href="@{../static/ico/favicon.png}"/>
+    <!-- end: Favicon and Touch Icons -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+</head>
+
+<body>
+<!-- start: Header -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse"
+               data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a id="main-menu-toggle" class="hidden-phone open"><i class="icon-reorder"></i></a>
+            <div class="row-fluid">
+                <a class="brand span2" th:href="index.html"><span>东浦数据采集平台</span></a>
+            </div>
+            <!-- start: Header Menu -->
+            <div class="nav-no-collapse header-nav">
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a class="btn account dropdown-toggle" data-toggle="dropdown" th:href="@{#}">
+                            <div class="user">
+                                <span class="name">User</span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-title">
+
+                            </li>
+                            <li><a th:href="login.html"><i class="icon-off"></i> 退出</a></li>
+                        </ul>
+                    </li>
+                    <!-- end: User Dropdown -->
+                </ul>
+            </div>
+            <!-- end: Header Menu -->
+
+        </div>
+    </div>
+</div>
+<!-- start: Header -->
+
+
+<div class="container-fluid-full">
+    <div class="row-fluid">
+
+        <!-- start: Main Menu -->
+        <div id="sidebar-left" class="span2">
+
+
+            <div class="nav-collapse sidebar-nav">
+
+                <ul id="main_menu" class="nav nav-tabs nav-stacked main-menu">
+
+
+
+                    <!--<li><a th:href="index.html"><i class="icon-bar-chart"></i><span class="factory-play"> 厂区总览</span></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a class="dropmenu" th:href="@{#}"><i class="icon-folder-close-alt"></i><span class="device-play"> 设备总览</span>-->
+                    <!--<span class="label">5</span></a>-->
+                    <!--<ul>-->
+                    <!--<li><a class="submenu" th:href="infrastructure.html"><i class="icon-status"></i><span-->
+                    <!--class="hidden-tablet"> 设备运行状态监控</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="messages.html"><i class="icon-daoju"></i><span-->
+                    <!--class="hidden-tablet"> 刀具管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-power"></i><span-->
+                    <!--class="hidden-tablet"> 能耗管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-oee"></i><span-->
+                    <!--class="hidden-tablet"> 设备OEE</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-input"></i><span-->
+                    <!--class="hidden-tablet"> 数据录入</span></a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li><a th:href="form.html"><i class="icon-edit"></i><span class="box-manage"> 盒子管理</span></a></li>-->
+
+
+                    <!--<li>-->
+                    <!--<a class="dropmenu" th:href="@{#}"><i class="icon-folder-close-alt"></i><span-->
+                    <!--class="data-input"> 数据采集</span> <span class="label">4</span></a>-->
+                    <!--<ul>-->
+                    <!--<li><a class="submenu" th:href="infrastructure.html"><i class="icon-type"></i><span-->
+                    <!--class="hidden-tablet"> 设备类型管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="messages.html"><i class="icon-factory-manage"></i><span-->
+                    <!--class="hidden-tablet"> 设备厂商管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-area"></i><span-->
+                    <!--class="hidden-tablet"> 设备区域管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-device"></i><span-->
+                    <!--class="hidden-tablet"> 设备管理</span></a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+
+                    <!--<li><a th:href="gallery.html"><i class="icon-notify"></i><span class="hidden-tablet"> 通知公告</span></a>-->
+                    <!--</li>-->
+                    <!--<li><a th:href="table.html"><i class="icon-interface"></i><span class="hidden-tablet"> 接口管理</span></a>-->
+                    <!--</li>-->
+
+                    <!--<li>-->
+                    <!--<a class="dropmenu" th:href="@{#}"><i class="icon-system-magnage"></i><span-->
+                    <!--class="data-input"> 系统管理</span> <span class="label">4</span></a>-->
+                    <!--<ul>-->
+                    <!--<li><a class="submenu" th:href="infrastructure.html"><i class="icon-source"></i><span-->
+                    <!--class="hidden-tablet"> 资源管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="messages.html"><i class="icon-model"></i><span-->
+                    <!--class="hidden-tablet"> 模块管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-user"></i><span-->
+                    <!--class="hidden-tablet"> 用户管理</span></a></li>-->
+                    <!--<li><a class="submenu" th:href="tasks.html"><i class="icon-daily"></i><span-->
+                    <!--class="hidden-tablet"> 日志管理</span></a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+        </div>
+        <!-- end: Main Menu -->
+
+        <!-- start: Content -->
+        <div id="content" class="span10">
+
+
+        </div>
+        <!-- end: Content -->
+
+    </div><!--/fluid-row-->
+
+    <div class="modal hide fade" id="myModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3>Settings</h3>
+        </div>
+        <div class="modal-body">
+            <p>Here settings can be configured...</p>
+        </div>
+        <div class="modal-footer">
+            <a th:href="@{#}" class="btn" data-dismiss="modal">Close</a>
+            <a th:href="@{#}" class="btn btn-primary">Save changes</a>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <p>
+            <span style="text-align: center;display: block">2018 © 技术支持：武汉科实嘉科技有限公司</span>
+        </p>
+
+    </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- start: JavaScript-->
+<script th:src="@{../static/js/jquery-1.10.2.min.js}"></script>
+<script th:src="@{../static/js/jquery-migrate-1.2.1.min.js}"></script>
+<script th:src="@{../static/js/jquery-ui-1.10.3.custom.min.js}"></script>
+<script th:src="@{../static/js/jquery.ui.touch-punch.js}"></script>
+<script th:src="@{../static/js/modernizr.js}"></script>
+<script th:src="@{../static/js/bootstrap.min.js}"></script>
+<script th:src="@{../static/js/jquery.cookie.js}"></script>
+<script th:src='@{../static/js/fullcalendar.min.js}'></script>
+<script th:src='@{../static/js/jquery.dataTables.min.js}'></script>
+<script th:src="@{../static/js/excanvas.js}"></script>
+<script th:src="@{../static/js/jquery.flot.js}"></script>
+<script th:src="@{../static/js/jquery.flot.pie.js}"></script>
+<script th:src="@{../static/js/jquery.flot.stack.js}"></script>
+<script th:src="@{../static/js/jquery.flot.resize.min.js}"></script>
+<script th:src="@{../static/js/jquery.flot.time.js}"></script>
+
+<script th:src="@{../static/js/jquery.chosen.min.js}"></script>
+<script th:src="@{../static/js/jquery.uniform.min.js}"></script>
+<script th:src="@{../static/js/jquery.cleditor.min.js}"></script>
+<script th:src="@{../static/js/jquery.noty.js}"></script>
+<script th:src="@{../static/js/jquery.elfinder.min.js}"></script>
+<script th:src="@{../static/js/jquery.raty.min.js}"></script>
+<script th:src="@{../static/js/jquery.iphone.toggle.js}"></script>
+<script th:src="@{../static/js/jquery.uploadify-3.1.min.js}"></script>
+<script th:src="@{../static/js/jquery.gritter.min.js}"></script>
+<script th:src="@{../static/js/jquery.imagesloaded.js}"></script>
+<script th:src="@{../static/js/jquery.masonry.min.js}"></script>
+<script th:src="@{../static/js/jquery.knob.modified.js}"></script>
+<script th:src="@{../static/js/jquery.sparkline.min.js}"></script>
+<script th:src="@{../static/js/counter.min.js}"></script>
+<script th:src="@{../static/js/raphael.2.1.0.min.js}"></script>
+<script th:src="@{../static/js/justgage.1.0.1.min.js}"></script>
+<script th:src="@{../static/js/jquery.autosize.min.js}"></script>
+<script th:src="@{../static/js/retina.js}"></script>
+<script th:src="@{../static/js/jquery.placeholder.min.js}"></script>
+<script th:src="@{../static/js/wizard.min.js}"></script>
+<script th:src="@{../static/js/core.min.js}"></script>
+<script th:src="@{../static/js/charts.min.js}"></script>
+<script th:src="@{../static/js/custom.min.js}"></script>
+<script th:src="@{../static/js/test/current.js}"></script>
+<!-- end: JavaScript-->
+
+
+</body>
+</html>
